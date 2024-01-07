@@ -19,7 +19,7 @@ color : greenColor
 Text(
   'Google Font',
   style: blackTextStyle.copyWith(
-      fontSize: 24,
+      fontSize: 25,
   ),
 );
 ------------------

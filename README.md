@@ -1,16 +1,33 @@
-# herbcalm
+# HerbCalm 🌿
 
-A new Flutter project.
+<p align="center">
+  <img src="assets/images/logo/logo-herbcalm.png" alt="App Logo" width="200" />
+</p>
 
-## Getting Started
+Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber informasi terpercaya seputar obat tradisional dan herbal. Dengan fokus pada konsultasi langsung dengan ahli herbal, aplikasi ini membantu pengguna menjalani gaya hidup yang sehat secara alami.
 
-This project is a starting point for a Flutter application.
+## 🌟 Fitur Utama
 
-A few resources to get you started if this is your first Flutter project:
+- **Login Fleksibel:** 🚪 Nikmati akses terbatas ke forum dan konsultasi tanpa login, tetapi dapatkan pengalaman penuh setelah masuk.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Beranda Penuh Rekomendasi:** 🏡 Temukan artikel bermanfaat, jawaban terbaik dari forum, dan rekomendasi ahli langsung dari beranda.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Resep Obat Herbal Personal:** 🌱 Dapatkan rekomendasi resep obat herbal yang sesuai dengan keluhan Anda.
+
+- **Pencarian Cepat dan Luas:** 🔍 Temukan apapun yang Anda butuhkan dengan fitur pencarian yang kuat.
+
+- **Konsultasi Online dengan Ahli Herbal:** 💬 Jadikan aplikasi ini sebagai asisten kesehatan pribadi Anda.
+
+- **Kategori Kesehatan:** 📚 Telusuri berbagai kategori seperti obat tradisional, obat herbal terstandarisasi (OHT), dan fitofarmaka.
+
+- **Profil Pribadi yang Dapat Diatur:** 👤 Kelola data pribadi Anda dengan fitur profil yang dapat diedit.
+
+## 📱 Tangkap Layar
+
+Tambahkan tangkapan layar aplikasi di sini.
+
+## 🚀 Cara Mulai
+
+1. **Clone Repositori:**
+   ```bash
+   git clone https://github.com/muhammadsadri19/HerbCalm.git

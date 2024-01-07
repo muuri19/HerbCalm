@@ -47,6 +47,6 @@ Tambahkan tangkapan layar aplikasi di sini.
    - Universitas: Telkom University
    - Role: Hipster
    
-4. **casta**
+4. **Casta Garneta**
    - Universitas: Telkom University
    - Role: Hustler

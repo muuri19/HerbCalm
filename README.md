@@ -1,7 +1,7 @@
 # HerbCalm 🌿
 
 <p align="center">
-  <img src="assets/images/logo/logo-herbcalm.png" alt="App Logo" width="200" />
+  <img src="assets/images/logo/logo-herbcalm-bg.jpeg" alt="App Logo" width="200" />
 </p>
 
 Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber informasi terpercaya seputar obat tradisional dan herbal. Dengan fokus pada konsultasi langsung dengan ahli herbal, aplikasi ini membantu pengguna menjalani gaya hidup yang sehat secara alami.

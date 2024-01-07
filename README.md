@@ -31,3 +31,22 @@ Tambahkan tangkapan layar aplikasi di sini.
 1. **Clone Repositori:**
    ```bash
    git clone https://github.com/muhammadsadri19/HerbCalm.git
+   ```
+
+## 🤝 Kontributor
+
+1. **Muhammad Sadri**
+   - Universitas: Telkom University
+   - Role: Hacker
+
+2. **Muhammad Zulfikar Ikhsan**
+   - Universitas: Telkom University
+   - Role: Hacker
+
+3. **Mellafesa Rofida**
+   - Universitas: Telkom University
+   - Role: Hipster
+   
+4. **casta**
+   - Universitas: Telkom University
+   - Role: Hustler

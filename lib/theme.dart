@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 //? This is, How to make theme color in flutter?
-Color greenColor = const Color.fromARGB(0, 0, 255, 42);
+Color backgroundColor = const Color(0xff43766C);
+Color secondaryColor = const Color(0xff76453B);
+Color thirdColor = const Color(0xffB19470);
+Color textColor = const Color(0xffF8FAE5);
 
 //? This is, How to make theme font in flutter
 TextStyle blackTextStyle = GoogleFonts.nunito(

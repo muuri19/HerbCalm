@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:herbcalm/app/modules/consult/views/consult_view.dart';
+import 'package:herbcalm/app/modules/forum/views/forum_view.dart';
 import 'package:herbcalm/app/modules/home/views/home_view.dart';
 import 'package:herbcalm/app/modules/navigation_bar/controllers/navigation_controller.dart';
 import 'package:herbcalm/app/modules/profile/views/profile_view.dart';
@@ -14,14 +16,26 @@ class NavigationView extends StatelessWidget {
     PersistentBottomNavBarItem(
       icon: Icon(Icons.home),
       title: 'Home',
-      activeColorPrimary: Colors.white,
-      inactiveColorPrimary: Colors.white.withOpacity(0.5),
+      activeColorPrimary: greenColor,
+      inactiveColorPrimary: Colors.grey.withOpacity(0.5),
+    ),
+    PersistentBottomNavBarItem(
+      icon: Icon(Icons.post_add),
+      title: 'Konsultasi',
+      activeColorPrimary: greenColor,
+      inactiveColorPrimary: Colors.grey.withOpacity(0.5),
+    ),
+    PersistentBottomNavBarItem(
+      icon: Icon(Icons.forum),
+      title: 'Forum',
+      activeColorPrimary: greenColor,
+      inactiveColorPrimary: Colors.grey.withOpacity(0.5),
     ),
     PersistentBottomNavBarItem(
       icon: Icon(Icons.person),
       title: 'Profile',
-      activeColorPrimary: Colors.white,
-      inactiveColorPrimary: Colors.white.withOpacity(0.5),
+      activeColorPrimary: greenColor,
+      inactiveColorPrimary: Colors.grey.withOpacity(0.5),
     ),
   ];
 
@@ -36,27 +50,32 @@ class NavigationView extends StatelessWidget {
       controller: navigationController.controller,
       screens: [
         HomeView(),
+        ConsultView(),
+        ForumView(),
         ProfileView(),
       ],
       items: _navBarItems,
       confineInSafeArea: true,
-      backgroundColor: backgroundColor,
+      backgroundColor: Colors.white,
       handleAndroidBackButtonPress: true,
       resizeToAvoidBottomInset: true,
       stateManagement: true,
       hideNavigationBarWhenKeyboardShows: true,
-      // decoration: NavBarDecoration(
-      //   borderRadius: BorderRadius.circular(25.0),
-      //   colorBehindNavBar: Colors.transparent,
-      // ),
+      decoration: NavBarDecoration(
+        border: Border.all(
+          color: Colors.grey.withOpacity(0.3), 
+          width: 1
+        )
+      ),
       popAllScreensOnTapOfSelectedTab: true,
-      popActionScreens: PopActionScreensType.all,
+      popActionScreens: PopActionScreensType.all ,
       itemAnimationProperties: ItemAnimationProperties(
         duration: Duration(milliseconds: 200),
         curve: Curves.easeInOut,
       ),
       
       navBarStyle: NavBarStyle.style14,
+      padding: NavBarPadding.symmetric(horizontal: 1),
     );
   }
 }

@@ -3,6 +3,7 @@ part of 'app_pages.dart';
 
 abstract class Routes {
   Routes._();
+  static const SPLASHSCREEN = _Paths.SPLASHSCREEN;
   static const NAVBAR = _Paths.NAVBAR;
   static const HOME = _Paths.HOME;
   static const PROFILE = _Paths.PROFILE;
@@ -12,6 +13,7 @@ abstract class Routes {
 
 abstract class _Paths {
   _Paths._();
+  static const SPLASHSCREEN = '/splashscreen';
   static const NAVBAR = '/';
   static const HOME = '/home';
   static const PROFILE = '/profile';

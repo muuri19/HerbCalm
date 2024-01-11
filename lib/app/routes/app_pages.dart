@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:herbcalm/main.dart';
 
 import '../modules/consult/bindings/consult_binding.dart';
 import '../modules/consult/views/consult_view.dart';
@@ -14,10 +15,16 @@ part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
-
-  static const INITIAL = Routes.NAVBAR;
+  
+  static const INITIAL = Routes.SPLASHSCREEN;
 
   static final routes = [
+
+    
+    GetPage(
+      name: _Paths.SPLASHSCREEN,
+      page: () => SplashScreen(),
+    ),
     GetPage(
       name: _Paths.NAVBAR,
       page: () => NavigationView(),

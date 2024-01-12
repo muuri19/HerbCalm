@@ -22,7 +22,7 @@ Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber inform
 
 - **Profil Pribadi yang Dapat Diatur:** 👤 Kelola data pribadi Anda dengan fitur profil yang dapat diedit.
 
-## 📱 Tangkap Layar
+## 📱 UI Aplikasi
 
 <p align="center">
   <img src="assets/images/screenshoot/1.jpg" alt="Screenshot 1" width="200" />
@@ -30,13 +30,11 @@ Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber inform
   <img src="assets/images/screenshoot/3.jpg" alt="Screenshot 3" width="200" />
 </p>
 
+`Screenshoot BackEnd`
+: [LINK DRIVE](https://drive.google.com/drive/folders/1bD97v8_nVrmp0R5qzsXxrx78-CwqQfVj?usp=sharing)
 
-## 🚀 Cara Mulai
-
-1. **Clone Repositori:**
-   ```bash
-   git clone https://github.com/muhammadsadri19/HerbCalm.git
-   ```
+`HerbCalm Pitchdeck`
+: [LINK CANVA](https://www.canva.com/design/DAF5gFXYVyM/RmyFZgDgsJ0zXCVlVdf3iA/edit)
 
 ## 🤝 Kontributor
 

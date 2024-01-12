@@ -24,9 +24,11 @@ Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber inform
 
 ## 📱 Tangkap Layar
 
-![SplashScreen](assets/images/screenshoot/1.jpg)
-![Dashboard](assets/images/screenshoot/2.jpg)
-![Profile](assets/images/screenshoot/3.jpg)
+<p align="center">
+  <img src="assets/images/screenshoot/1.jpg" alt="Screenshot 1" width="200" />
+  <img src="assets/images/screenshoot/2.jpg" alt="Screenshot 2" width="200" />
+  <img src="assets/images/screenshoot/3.jpg" alt="Screenshot 3" width="200" />
+</p>
 
 
 ## 🚀 Cara Mulai

@@ -40,18 +40,15 @@ Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber inform
 
 ## 🤝 Kontributor
 
-1. **Muhammad Sadri**
-   - Universitas: Telkom University
-   - Role: Hacker
+`Hacker`
+[Muhammad Sadri](https://github.com/muhammadsadri19)
 
-2. **Muhammad Zulfikar Ikhsan**
-   - Universitas: Telkom University
-   - Role: Hacker
+`Hacker`
+[Muhammad Zulfikar Ikhsan](https://github.com/MuhammadZulfikarIkhsan8)
 
-3. **Mellafesa Rofida**
-   - Universitas: Telkom University
-   - Role: Hipster
+`Hipster`
+[Mellafesa Rofida](https://github.com/Mellafesa)
+
+`Hustler`
+[Casta Garneta](https://github.com/castagh)
    
-4. **Casta Garneta**
-   - Universitas: Telkom University
-   - Role: Hustler

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:herbcalm/app/modules/forum/components/card_widget.dart';
+import 'package:herbcalm/theme.dart';
 
 import '../controllers/forum_controller.dart';
 
@@ -9,16 +11,35 @@ class ForumView extends GetView<ForumController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('ForumView'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'ForumView is working',
-          style: TextStyle(fontSize: 20),
+      backgroundColor: Colors.white,
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          surfaceTintColor: Colors.white,
+          title: const Text('Forum'),
+          centerTitle: true,
+          actions: [Icon(Icons.search), SizedBox(width: 20, height: 0.0)],
         ),
-      ),
-    );
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(15, 15, 15, 15),
+            child: Column(
+              children: [
+                CardWidget(),
+                SizedBox(
+                  height: 10,
+                ),
+                CardWidget(),
+                SizedBox(
+                  height: 10,
+                ),
+                CardWidget(),
+                SizedBox(
+                  height: 10,
+                ),
+                CardWidget(),
+              ],
+            ),
+          ),
+        ));
   }
 }

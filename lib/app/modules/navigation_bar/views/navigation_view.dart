@@ -20,8 +20,8 @@ class NavigationView extends StatelessWidget {
       inactiveColorPrimary: Colors.grey.withOpacity(0.5),
     ),
     PersistentBottomNavBarItem(
-      icon: Icon(Icons.post_add),
-      title: 'Konsultasi',
+      icon: Icon(Icons.chat),
+      title: 'Chat',
       activeColorPrimary: greenColor,
       inactiveColorPrimary: Colors.grey.withOpacity(0.5),
     ),

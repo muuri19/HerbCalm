@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:herbcalm/theme.dart';
 
@@ -12,8 +12,12 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          surfaceTintColor: greenColor,
           backgroundColor: greenColor,
-          systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: greenColor, systemNavigationBarColor: Colors.white),
+          systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarColor: greenColor, 
+            statusBarBrightness: Brightness.light,
+            systemNavigationBarIconBrightness: Brightness.light),
           leading: Icon(
             Icons.location_on,
             color: Colors.white,
@@ -135,6 +139,9 @@ class HomeView extends GetView<HomeController> {
                                         decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: greysColor),
+                                            child: Center(
+                                              child: SvgPicture.asset('assets/svg/home/obatherbal.svg'),
+                                            ),
                                       ),
                                       Text('Obat Herbal')
                                     ],
@@ -148,6 +155,9 @@ class HomeView extends GetView<HomeController> {
                                         decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: greysColor),
+                                            child: Center(
+                                              child: SvgPicture.asset('assets/svg/home/konsultasi.svg'),
+                                            ),
                                       ),
                                       Text('Konsultasi')
                                     ],
@@ -161,6 +171,9 @@ class HomeView extends GetView<HomeController> {
                                         decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: greysColor),
+                                            child: Center(
+                                              child: SvgPicture.asset('assets/svg/home/resepobat.svg'),
+                                            ),
                                       ),
                                       Text('Resep Obat')
                                     ],
@@ -174,8 +187,11 @@ class HomeView extends GetView<HomeController> {
                                         decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: greysColor),
+                                            child: Center(
+                                              child: SvgPicture.asset('assets/svg/home/meditasi.svg'),
+                                            ),
                                       ),
-                                      Text('Forum 1'),
+                                      Text('Meditasi'),
                                     ],
                                   ),
                                   SizedBox(width: 20, height: 0.0),
@@ -187,8 +203,11 @@ class HomeView extends GetView<HomeController> {
                                         decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: greysColor),
+                                            child: Center(
+                                              child: SvgPicture.asset('assets/svg/home/obatherbal.svg'),
+                                            ),
                                       ),
-                                      Text('Forum 2'),
+                                      Text('Obat Herbal')
                                     ],
                                   ),
                                   SizedBox(width: 20, height: 0.0),
@@ -200,8 +219,43 @@ class HomeView extends GetView<HomeController> {
                                         decoration: BoxDecoration(
                                             shape: BoxShape.circle,
                                             color: greysColor),
+                                            child: Center(
+                                              child: SvgPicture.asset('assets/svg/home/konsultasi.svg'),
+                                            ),
                                       ),
-                                      Text('Forum 3'),
+                                      Text('Konsultasi')
+                                    ],
+                                  ),
+                                  SizedBox(width: 20, height: 0.0),
+                                  Column(
+                                    children: [
+                                      Container(
+                                        height: 65,
+                                        width: 65,
+                                        decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            color: greysColor),
+                                            child: Center(
+                                              child: SvgPicture.asset('assets/svg/home/resepobat.svg'),
+                                            ),
+                                      ),
+                                      Text('Resep Obat')
+                                    ],
+                                  ),
+                                  SizedBox(width: 20, height: 0.0),
+                                  Column(
+                                    children: [
+                                      Container(
+                                        height: 65,
+                                        width: 65,
+                                        decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            color: greysColor),
+                                            child: Center(
+                                              child: SvgPicture.asset('assets/svg/home/meditasi.svg'),
+                                            ),
+                                      ),
+                                      Text('Meditasi'),
                                     ],
                                   ),
                                 ],

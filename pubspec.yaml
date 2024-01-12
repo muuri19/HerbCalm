@@ -27,6 +27,9 @@ dev_dependencies:
 flutter: 
   uses-material-design: true
   assets:
+    - assets/images/screenshoot/1.jpg
+    - assets/images/screenshoot/2.jpg
+    - assets/images/screenshoot/3.jpg
     - assets/images/logo/logo-herbcalm-bg.jpeg
     - assets/images/logo/logo.png
     - assets/images/profile.jpeg

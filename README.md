@@ -34,7 +34,10 @@ Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber inform
 : [LINK DRIVE](https://drive.google.com/drive/folders/1bD97v8_nVrmp0R5qzsXxrx78-CwqQfVj?usp=sharing)
 
 `HerbCalm Pitchdeck`
-: [LINK CANVA](https://www.canva.com/design/DAF5gFXYVyM/RmyFZgDgsJ0zXCVlVdf3iA/edit)
+: [LINK DRIVE](https://www.canva.com/design/DAF5gFXYVyM/RmyFZgDgsJ0zXCVlVdf3iA/edit)
+
+`Mockup Design HerbCalm`
+: [LINK DRIVE](https://drive.google.com/drive/folders/1diLqCF9hyAxM3uWIhcQg7Yl2h1R9w8jf?usp=sharing)
 
 ## 🤝 Kontributor
 

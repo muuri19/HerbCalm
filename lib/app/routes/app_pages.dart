@@ -1,4 +1,8 @@
 import 'package:get/get.dart';
+import 'package:herbcalm/app/modules/home/views/konsultasi_view.dart';
+import 'package:herbcalm/app/modules/home/views/meditasi_view.dart';
+import 'package:herbcalm/app/modules/home/views/obatherbal_view.dart';
+import 'package:herbcalm/app/modules/home/views/resepobat_view.dart';
 import 'package:herbcalm/main.dart';
 
 import '../modules/consult/bindings/consult_binding.dart';
@@ -15,12 +19,10 @@ part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
-  
+
   static const INITIAL = Routes.SPLASHSCREEN;
 
   static final routes = [
-
-    
     GetPage(
       name: _Paths.SPLASHSCREEN,
       page: () => SplashScreen(),
@@ -30,10 +32,27 @@ class AppPages {
       page: () => NavigationView(),
     ),
     GetPage(
-      name: _Paths.HOME,
-      page: () => HomeView(),
-      binding: HomeBinding(),
-    ),
+        name: _Paths.HOME,
+        page: () => HomeView(),
+        binding: HomeBinding(),
+        children: [
+          GetPage(
+            name: _Paths.OBATHERBAL,
+            page: () => ObatherbalView(),
+          ),
+          GetPage(
+            name: _Paths.KONSULTASI,
+            page: () => KonsultasiView(),
+          ),
+          GetPage(
+            name: _Paths.RESEPOBAT,
+            page: () => ResepobatView(),
+          ),
+          GetPage(
+            name: _Paths.MEDITASI,
+            page: () => MeditasiView(),
+          ),
+        ]),
     GetPage(
       name: _Paths.PROFILE,
       page: () => ProfileView(),

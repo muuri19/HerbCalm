@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
 import 'package:herbcalm/app/modules/forum/components/card_widget.dart';
@@ -19,27 +20,35 @@ class ForumView extends GetView<ForumController> {
           centerTitle: true,
           actions: [Icon(Icons.search), SizedBox(width: 20, height: 0.0)],
         ),
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(15, 15, 15, 15),
-            child: Column(
-              children: [
-                CardWidget(),
-                SizedBox(
-                  height: 10,
-                ),
-                CardWidget(),
-                SizedBox(
-                  height: 10,
-                ),
-                CardWidget(),
-                SizedBox(
-                  height: 10,
-                ),
-                CardWidget(),
-              ],
-            ),
+        body: Padding(
+          padding: const EdgeInsetsDirectional.fromSTEB(20, 15, 20, 15),
+          child: ListView(
+            physics: BouncingScrollPhysics(),
+            children: [
+              CardWidget(),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  CardWidget(),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  CardWidget(),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  CardWidget(),
+            ],
           ),
-        ));
+        ),
+        floatingActionButton: FloatingActionButton(
+          heroTag: 'addForum',
+        onPressed: () {},
+        backgroundColor: greenColor,
+        child: Center(
+          child: SvgPicture.asset('assets/svg/forum/addForum.svg'),
+        ),
+      ),
+        );
   }
 }

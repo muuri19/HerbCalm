@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:herbcalm/app/routes/app_pages.dart';
 import 'package:herbcalm/theme.dart';
 
 import '../controllers/home_controller.dart';
@@ -15,9 +16,9 @@ class HomeView extends GetView<HomeController> {
           surfaceTintColor: greenColor,
           backgroundColor: greenColor,
           systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor: greenColor, 
-            statusBarBrightness: Brightness.light,
-            systemNavigationBarIconBrightness: Brightness.light),
+              statusBarColor: greenColor,
+              statusBarBrightness: Brightness.light,
+              systemNavigationBarIconBrightness: Brightness.light),
           leading: Icon(
             Icons.location_on,
             color: Colors.white,
@@ -124,142 +125,164 @@ class HomeView extends GetView<HomeController> {
                         Padding(
                           padding:
                               const EdgeInsetsDirectional.fromSTEB(5, 5, 5, 0),
-                          child: Container(
-                              height:
-                                  100, // Sesuaikan dengan tinggi yang diinginkan
-                              child: ListView(
-                                scrollDirection: Axis.horizontal,
-                                physics: BouncingScrollPhysics(),
-                                children: [
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 65,
-                                        width: 65,
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: greysColor),
-                                            child: Center(
-                                              child: SvgPicture.asset('assets/svg/home/obatherbal.svg'),
-                                            ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              InkWell(
+                                onTap: () => Get.toNamed('/home/obat-herbal'),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 65,
+                                      width: 65,
+                                      decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: greysColor),
+                                      child: Center(
+                                        child: SvgPicture.asset(
+                                            'assets/svg/home/obatherbal.svg'),
                                       ),
-                                      Text('Obat Herbal')
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 65,
-                                        width: 65,
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: greysColor),
-                                            child: Center(
-                                              child: SvgPicture.asset('assets/svg/home/konsultasi.svg'),
-                                            ),
+                                    ),
+                                    Text('Obat Herbal')
+                                  ],
+                                ),
+                              ),
+                              InkWell(
+                                onTap: () => Get.toNamed('/home/konsultasi'),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 65,
+                                      width: 65,
+                                      decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: greysColor),
+                                      child: Center(
+                                        child: SvgPicture.asset(
+                                            'assets/svg/home/konsultasi.svg'),
                                       ),
-                                      Text('Konsultasi')
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 65,
-                                        width: 65,
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: greysColor),
-                                            child: Center(
-                                              child: SvgPicture.asset('assets/svg/home/resepobat.svg'),
-                                            ),
+                                    ),
+                                    Text('Konsultasi')
+                                  ],
+                                ),
+                              ),
+                              InkWell(
+                                onTap: ()=> Get.toNamed('/home/resep-obat'),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 65,
+                                      width: 65,
+                                      decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: greysColor),
+                                      child: Center(
+                                        child: SvgPicture.asset(
+                                            'assets/svg/home/resepobat.svg'),
                                       ),
-                                      Text('Resep Obat')
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 65,
-                                        width: 65,
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: greysColor),
-                                            child: Center(
-                                              child: SvgPicture.asset('assets/svg/home/meditasi.svg'),
-                                            ),
+                                    ),
+                                    Text('Resep Obat')
+                                  ],
+                                ),
+                              ),
+                              InkWell(
+                                onTap: ()=> Get.toNamed('/home/meditasi'),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 65,
+                                      width: 65,
+                                      decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: greysColor),
+                                      child: Center(
+                                        child: SvgPicture.asset(
+                                            'assets/svg/home/meditasi.svg'),
                                       ),
-                                      Text('Meditasi'),
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 65,
-                                        width: 65,
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: greysColor),
-                                            child: Center(
-                                              child: SvgPicture.asset('assets/svg/home/obatherbal.svg'),
-                                            ),
-                                      ),
-                                      Text('Obat Herbal')
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 65,
-                                        width: 65,
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: greysColor),
-                                            child: Center(
-                                              child: SvgPicture.asset('assets/svg/home/konsultasi.svg'),
-                                            ),
-                                      ),
-                                      Text('Konsultasi')
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 65,
-                                        width: 65,
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: greysColor),
-                                            child: Center(
-                                              child: SvgPicture.asset('assets/svg/home/resepobat.svg'),
-                                            ),
-                                      ),
-                                      Text('Resep Obat')
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    children: [
-                                      Container(
-                                        height: 65,
-                                        width: 65,
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            color: greysColor),
-                                            child: Center(
-                                              child: SvgPicture.asset('assets/svg/home/meditasi.svg'),
-                                            ),
-                                      ),
-                                      Text('Meditasi'),
-                                    ],
-                                  ),
-                                ],
-                              )),
+                                    ),
+                                    Text('Meditasi')
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          // Container(
+                          //     height:
+                          //         100, // Sesuaikan dengan tinggi yang diinginkan
+                          //     child: ListView(
+                          //       scrollDirection: Axis.horizontal,
+                          //       physics: BouncingScrollPhysics(),
+                          //       children: [
+                          //         Column(
+                          //           children: [
+                          //             Container(
+                          //               height: 65,
+                          //               width: 65,
+                          //               decoration: BoxDecoration(
+                          //                   shape: BoxShape.circle,
+                          //                   color: greysColor),
+                          //               child: Center(
+                          //                 child: SvgPicture.asset(
+                          //                     'assets/svg/home/obatherbal.svg'),
+                          //               ),
+                          //             ),
+                          //             Text('Obat Herbal')
+                          //           ],
+                          //         ),
+                          //         SizedBox(width: 20, height: 0.0),
+                          //         Column(
+                          //           children: [
+                          //             Container(
+                          //               height: 65,
+                          //               width: 65,
+                          //               decoration: BoxDecoration(
+                          //                   shape: BoxShape.circle,
+                          //                   color: greysColor),
+                          //               child: Center(
+                          //                 child: SvgPicture.asset(
+                          //                     'assets/svg/home/konsultasi.svg'),
+                          //               ),
+                          //             ),
+                          //             Text('Konsultasi')
+                          //           ],
+                          //         ),
+                          //         SizedBox(width: 20, height: 0.0),
+                          //         Column(
+                          //           children: [
+                          //             Container(
+                          //               height: 65,
+                          //               width: 65,
+                          //               decoration: BoxDecoration(
+                          //                   shape: BoxShape.circle,
+                          //                   color: greysColor),
+                          //               child: Center(
+                          //                 child: SvgPicture.asset(
+                          //                     'assets/svg/home/resepobat.svg'),
+                          //               ),
+                          //             ),
+                          //             Text('Resep Obat')
+                          //           ],
+                          //         ),
+                          //         SizedBox(width: 20, height: 0.0),
+                          //         Column(
+                          //           children: [
+                          //             Container(
+                          //               height: 65,
+                          //               width: 65,
+                          //               decoration: BoxDecoration(
+                          //                   shape: BoxShape.circle,
+                          //                   color: greysColor),
+                          //               child: Center(
+                          //                 child: SvgPicture.asset(
+                          //                     'assets/svg/home/meditasi.svg'),
+                          //               ),
+                          //             ),
+                          //             Text('Meditasi'),
+                          //           ],
+                          //         ),
+                          //       ],
+                          //     )),
                         ),
 
                         Padding(
@@ -419,10 +442,9 @@ class HomeView extends GetView<HomeController> {
                                     ],
                                   ),
                                   SizedBox(width: 20, height: 0.0),
-                                  
                                 ],
                               )),
-                        ),// Sini
+                        ), // Sini
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               20, 20, 20, 12),
@@ -580,10 +602,9 @@ class HomeView extends GetView<HomeController> {
                                     ],
                                   ),
                                   SizedBox(width: 20, height: 0.0),
-                                  
                                 ],
                               )),
-                        ),// Sini
+                        ), // Sini
                       ],
                     ),
                   ),

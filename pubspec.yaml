@@ -16,6 +16,7 @@ dependencies:
   sticky_headers: ^0.3.0+2
   animated_splash_screen: ^1.3.0
   flutter_svg: ^2.0.9
+  carousel_slider: ^4.2.1
  
   
 
@@ -32,12 +33,17 @@ flutter:
     - assets/images/screenshoot/3.jpg
     - assets/images/logo/logo-herbcalm-bg.jpeg
     - assets/images/logo/logo.png
+    - assets/images/dokter/dr1.png
+    - assets/images/dokter/dr2.png
     - assets/images/profile.jpeg
     - assets/images/artikelImage/image1.png
     - assets/images/artikelImage/image2.png
+    - assets/images/artikelImage/carousel.png
+    - assets/images/obatJamu/lancarhaid.png
     - assets/svg/home/obatherbal.svg
     - assets/svg/home/konsultasi.svg
     - assets/svg/home/meditasi.svg
     - assets/svg/home/resepobat.svg
-    - assets/svg/chat/addFloat.svg
+    - assets/svg/chat/addChat.svg
+    - assets/svg/forum/addForum.svg
 

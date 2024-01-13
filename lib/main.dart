@@ -14,9 +14,12 @@ void main() {
       title: "Application",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
-      theme: ThemeData(
-        useMaterial3: true
-      ),
+      enableLog: true,
+      defaultTransition: Transition.fade,
+      opaqueRoute: Get.isOpaqueRouteDefault,
+      popGesture: Get.isPopGestureEnable,
+      transitionDuration: Get.defaultTransitionDuration,
+      
     ),
   );
 }

@@ -31,7 +31,14 @@ dependencies:
   firebase_storage: ^11.6.0
   firebase_auth: ^4.16.0
   google_sign_in: ^6.2.1
+  flutter_launcher_icons: ^0.13.1
 
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo/logo-launcher-white.png"
+  adaptive_icon_background: '#128D61'
  
   
 
@@ -39,6 +46,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test: 
     sdk: flutter
+
+
 
 flutter: 
   uses-material-design: true
@@ -48,6 +57,7 @@ flutter:
     - assets/images/screenshoot/3.jpg
     - assets/images/logo/logo.png
     - assets/images/logo/logo-white.png
+    - assets/images/logo/logo-launcher-white.png
     - assets/images/dokter/dr1.png
     - assets/images/dokter/dr2.png
     - assets/images/dokter/drf1.png

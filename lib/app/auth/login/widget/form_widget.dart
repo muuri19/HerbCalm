@@ -12,6 +12,7 @@ class FormWidget extends StatefulWidget {
 }
 
 class _FormWidgetState extends State<FormWidget> {
+  
   bool _isObscure = true;
   @override
   Widget build(BuildContext context) {

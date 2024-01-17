@@ -1,13 +1,19 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
+import 'package:herbcalm/app/auth/register/view/register_page.dart';
 import 'package:herbcalm/app/modules/navigation_bar/views/navigation_view.dart';
+import 'package:herbcalm/firebase_options.dart';
 import 'package:herbcalm/theme.dart';
 
 import 'app/routes/app_pages.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform
+  );
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
@@ -38,8 +44,8 @@ const SplashScreen({ Key? key }) : super(key: key);
         ),
       ),
       backgroundColor: greenColor,
-      nextScreen: NavigationView(),
-      duration: 2000,
+      nextScreen: RegisterPage(),
+      duration: 1000,
     );
   }
 }

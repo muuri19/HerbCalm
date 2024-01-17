@@ -13,42 +13,24 @@ class ForumView extends GetView<ForumController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          surfaceTintColor: Colors.white,
-          title: const Text('Forum'),
-          centerTitle: true,
-          actions: [Icon(Icons.search), SizedBox(width: 20, height: 0.0)],
-        ),
-        body: Padding(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white,
+        title: const Text('Forum'),
+        centerTitle: true,
+        actions: [Icon(Icons.search), SizedBox(width: 20, height: 0.0)],
+      ),
+      body: Padding(
           padding: const EdgeInsetsDirectional.fromSTEB(20, 15, 20, 15),
-          child: ListView(
-            physics: BouncingScrollPhysics(),
-            children: [
-              CardWidget(),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  CardWidget(),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  CardWidget(),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  CardWidget(),
-            ],
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          heroTag: 'addForum',
+          child: CardWidgetForum()),
+      floatingActionButton: FloatingActionButton(
+        heroTag: 'addForum',
         onPressed: () {},
         backgroundColor: greenColor,
         child: Center(
           child: SvgPicture.asset('assets/svg/forum/addForum.svg'),
         ),
       ),
-        );
+    );
   }
 }

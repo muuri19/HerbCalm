@@ -2,34 +2,80 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-//? This is, How to make theme color in flutter?
+//* THEME COLORS
 Color greenColor = const Color(0xff128D61);
 Color greysColor = const Color(0xffF2F4F7);
-Color secondaryColor = const Color(0xff76453B);
-Color thirdColor = const Color(0xffB19470);
-Color textColor = const Color(0xffF8FAE5);
+Color greyColor = const Color(0xff757575);
+
+
+
+//* TEXT COLORS
+Color textWhiteColor = const Color(0xffFFFFFF);
+Color textBlackColor = const Color(0xff000000);
+Color textGreenColor = const Color(0xff128D61);
+Color textGreyColor = const Color(0xff757575);
 
 double edge = 24;
-//? This is, How to make theme font in flutter
+
+
+//* TEXT STYLE BOLD = W700
 TextStyle textBoldBlack = GoogleFonts.manrope(
   fontWeight: FontWeight.w700,
-  color: Colors.black 
+  color: textBlackColor
 );
 TextStyle textBoldWhite = GoogleFonts.manrope(
   fontWeight: FontWeight.w700,
-  color: Colors.white 
+  color: textWhiteColor 
 );
-TextStyle textSemiBold = GoogleFonts.manrope(
+TextStyle textBoldGreen = GoogleFonts.manrope(
+  fontWeight: FontWeight.w700,
+  color: textGreenColor                                          
+);
+
+//* TEXT STYLE SEMIBOLD = W600
+TextStyle textSemiBoldBlack = GoogleFonts.manrope(
   fontWeight: FontWeight.w600,
-  color: Colors.black 
+  color: textBlackColor
 );
-TextStyle textMedium = GoogleFonts.manrope(
+TextStyle textSemiBoldWhite = GoogleFonts.manrope(
+  fontWeight: FontWeight.w600,
+  color: textWhiteColor 
+);
+TextStyle textSemiBoldGreen = GoogleFonts.manrope(
+  fontWeight: FontWeight.w600,
+  color: textGreenColor                                          
+);
+
+//* TEXT STYLE MEDIUM = W500
+TextStyle textMediumBlack = GoogleFonts.manrope(
   fontWeight: FontWeight.w500,
   color: Colors.black 
 );
-TextStyle textRegular = GoogleFonts.manrope(
+TextStyle textMediumWhite = GoogleFonts.manrope(
+  fontWeight: FontWeight.w500,
+  color: textWhiteColor 
+);
+TextStyle textMediumGreen = GoogleFonts.manrope(
+  fontWeight: FontWeight.w500,
+  color: textGreenColor                                          
+);
+
+//* TEXT STYLE REGULAR = W400
+TextStyle textRegularBlack = GoogleFonts.manrope(
   fontWeight: FontWeight.w400,
-  color: Colors.black 
+  color: textBlackColor
+);
+TextStyle textRegularWhite = GoogleFonts.manrope(
+  fontWeight: FontWeight.w400,
+  color: textWhiteColor
+);
+TextStyle textRegularGreen = GoogleFonts.manrope(
+  fontWeight: FontWeight.w400,
+  color: textGreenColor
+);
+TextStyle textRegularGrey = GoogleFonts.manrope(
+  fontWeight: FontWeight.w400,
+  color: textGreyColor
 );
 //TODO : How to use this theme
 /*

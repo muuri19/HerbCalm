@@ -1,14 +1,18 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:herbcalm/app/modules/home/components/carousel_slider.dart';
 import 'package:herbcalm/app/modules/home/components/fitofarmaka_grid.dart';
 import 'package:herbcalm/app/modules/home/components/jamu_grid.dart';
 import 'package:herbcalm/app/modules/home/components/oht_grid.dart';
+import 'package:herbcalm/app/modules/home/controllers/obat_herbal_controller.dart';
 import 'package:herbcalm/theme.dart';
 
 class ObatherbalView extends GetView {
-  const ObatherbalView({Key? key}) : super(key: key);
+  ObatherbalView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -58,40 +62,11 @@ class ObatherbalView extends GetView {
                   ],
                 ),
               ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
-                child: CarouselSlider.builder(
-                  itemCount: 5,
-                  itemBuilder:
-                      (BuildContext context, int index, int realIndex) =>
-                          Container(
-                    width: MediaQuery.of(context).size.width,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(15),
-                      child: Image.asset(
-                        'assets/images/artikelImage/carousel.png',
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  options: CarouselOptions(
-                    aspectRatio: 2,
-                    viewportFraction: 0.8,
-                    initialPage: 0,
-                    enableInfiniteScroll: true,
-                    reverse: false,
-                    autoPlay: true,
-                    autoPlayInterval: Duration(seconds: 3),
-                    autoPlayAnimationDuration: Duration(milliseconds: 800),
-                    autoPlayCurve: Curves.fastOutSlowIn,
-                    enlargeCenterPage: true,
-                    enlargeFactor: 0.2,
-                    scrollDirection: Axis.horizontal,
-                  ),
-                ),
-              ),
+
+              //? Letal Carousel Slider
+              CarouselSliderView(),
               SizedBox(
-                height: 42,
+                height: 25,
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),

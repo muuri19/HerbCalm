@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:get/get.dart';
+import 'package:herbcalm/app/modules/consult/components/list_chat.dart';
 import 'package:herbcalm/theme.dart';
 
 import '../controllers/consult_controller.dart';
@@ -76,52 +77,7 @@ class ConsultView extends GetView<ConsultController> {
               ],
             ),
           ),
-          Column(
-            children: [
-              ListTile(
-                leading: CircleAvatar(
-                  child: Image.asset('assets/images/dokter/dr1.png'),
-                ),
-                trailing: Container(
-                  height: 25,
-                  width: 25,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: greenColor,
-                  ),
-                  child: Center(
-                    child: Text(
-                      '3',
-                      style: textBoldWhite,
-                    ),
-                  ),
-                ),
-                title: Text('dr.Isabelle'),
-                subtitle: Text('Apakah anda sudah membaik?'),
-              ),
-              ListTile(
-                leading: CircleAvatar(
-                  child: Image.asset('assets/images/dokter/dr2.png'),
-                ),
-                trailing: Container(
-                  height: 25,
-                  width: 25,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: greenColor,
-                  ),
-                  child: Center(
-                    child: Text(
-                      '1',
-                      style: textBoldWhite,
-                    ),
-                  ),
-                ),
-                title: Text('dr.Alexander'),
-                subtitle: Text('Bagaimana kabar anda sekarang?'),
-              ),
-            ],
-          )
+          Expanded(child: ListChat())
         ],
       ),
       floatingActionButton: FloatingActionButton(

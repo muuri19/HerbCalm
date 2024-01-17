@@ -1,4 +1,7 @@
 import 'package:get/get.dart';
+import 'package:herbcalm/app/auth/login/view/login_page.dart';
+import 'package:herbcalm/app/auth/register/view/register_page.dart';
+import 'package:herbcalm/app/modules/home/views/intro_konsultasi_view.dart';
 import 'package:herbcalm/app/modules/home/views/konsultasi_view.dart';
 import 'package:herbcalm/app/modules/home/views/meditasi_view.dart';
 import 'package:herbcalm/app/modules/home/views/obatherbal_view.dart';
@@ -28,6 +31,14 @@ class AppPages {
       page: () => SplashScreen(),
     ),
     GetPage(
+      name: _Paths.LOGIN,
+      page: () => LoginPage(),
+    ),
+    GetPage(
+      name: _Paths.REGISTER,
+      page: () => RegisterPage(),
+    ),
+    GetPage(
       name: _Paths.NAVBAR,
       page: () => NavigationView(),
     ),
@@ -41,9 +52,13 @@ class AppPages {
             page: () => ObatherbalView(),
           ),
           GetPage(
-            name: _Paths.KONSULTASI,
-            page: () => KonsultasiView(),
-          ),
+              name: _Paths.INTROKONSULTASI,
+              page: () => IntroKonsultasiView(),
+              children: [
+                GetPage(
+                    name: _Paths.INTROKONSULTASI,
+                    page: () => KonsultasiView())
+              ]),
           GetPage(
             name: _Paths.RESEPOBAT,
             page: () => ResepobatView(),
@@ -59,10 +74,13 @@ class AppPages {
       binding: ProfileBinding(),
     ),
     GetPage(
-      name: _Paths.CONSULT,
-      page: () => const ConsultView(),
-      binding: ConsultBinding(),
-    ),
+        name: _Paths.CONSULT,
+        page: () => const ConsultView(),
+        binding: ConsultBinding(),
+        children: [
+          // GetPage(name: _Paths.CHAT, page: ChatViewFitur()
+          // )
+        ]),
     GetPage(
       name: _Paths.FORUM,
       page: () => const ForumView(),

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:herbcalm/app/routes/app_pages.dart';
+import 'package:herbcalm/app/modules/home/components/artikel_kesehatan.dart';
+import 'package:herbcalm/app/modules/home/components/artikel_obatherbal.dart';
 import 'package:herbcalm/theme.dart';
-
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -81,7 +81,7 @@ class HomeView extends GetView<HomeController> {
                     width: MediaQuery.of(context).size.width,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.vertical(
-                        top: Radius.circular(20),
+                        top: Radius.circular(10),
                       ),
                       color: Colors.white,
                     ),
@@ -114,9 +114,13 @@ class HomeView extends GetView<HomeController> {
                                 decoration: InputDecoration(
                                     hintText:
                                         'Cari solusi masalah kesehatanmu...',
+                                    hintStyle: textRegularGrey,
                                     enabledBorder: InputBorder.none,
                                     focusedBorder: InputBorder.none,
-                                    prefixIcon: Icon(Icons.search)),
+                                    prefixIcon: Icon(
+                                      Icons.search,
+                                      color: greyColor,
+                                    )),
                               ),
                             ),
                           ),
@@ -143,12 +147,19 @@ class HomeView extends GetView<HomeController> {
                                             'assets/svg/home/obatherbal.svg'),
                                       ),
                                     ),
-                                    Text('Obat Herbal')
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      'Obat Herbal',
+                                      style: textSemiBoldBlack.copyWith(
+                                          fontSize: 12),
+                                    )
                                   ],
                                 ),
                               ),
                               InkWell(
-                                onTap: () => Get.toNamed('/home/konsultasi'),
+                                onTap: () => Get.toNamed('/home/intro-konsultasi'),
                                 child: Column(
                                   children: [
                                     Container(
@@ -162,12 +173,19 @@ class HomeView extends GetView<HomeController> {
                                             'assets/svg/home/konsultasi.svg'),
                                       ),
                                     ),
-                                    Text('Konsultasi')
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      'Konsultasi',
+                                      style: textSemiBoldBlack.copyWith(
+                                          fontSize: 12),
+                                    )
                                   ],
                                 ),
                               ),
                               InkWell(
-                                onTap: ()=> Get.toNamed('/home/resep-obat'),
+                                onTap: () => Get.toNamed('/home/resep-obat'),
                                 child: Column(
                                   children: [
                                     Container(
@@ -181,12 +199,19 @@ class HomeView extends GetView<HomeController> {
                                             'assets/svg/home/resepobat.svg'),
                                       ),
                                     ),
-                                    Text('Resep Obat')
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      'Resep Obat',
+                                      style: textSemiBoldBlack.copyWith(
+                                          fontSize: 12),
+                                    )
                                   ],
                                 ),
                               ),
                               InkWell(
-                                onTap: ()=> Get.toNamed('/home/meditasi'),
+                                onTap: () => Get.toNamed('/home/meditasi'),
                                 child: Column(
                                   children: [
                                     Container(
@@ -200,7 +225,14 @@ class HomeView extends GetView<HomeController> {
                                             'assets/svg/home/meditasi.svg'),
                                       ),
                                     ),
-                                    Text('Meditasi')
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      'Meditasi',
+                                      style: textSemiBoldBlack.copyWith(
+                                          fontSize: 12),
+                                    )
                                   ],
                                 ),
                               ),
@@ -287,7 +319,7 @@ class HomeView extends GetView<HomeController> {
 
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              20, 20, 20, 12),
+                              20, 20, 20, 10),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -297,157 +329,21 @@ class HomeView extends GetView<HomeController> {
                               ),
                               Text(
                                 'Lihat semua',
-                                style: TextStyle(color: greenColor),
+                                style: textBoldGreen.copyWith(fontSize: 12),
                               )
                             ],
                           ),
                         ),
 
-                        Padding(
-                          padding:
-                              const EdgeInsetsDirectional.fromSTEB(5, 5, 5, 0),
-                          child: Container(
-                              height:
-                                  230, // Sesuaikan dengan tinggi yang diinginkan
-                              child: ListView(
-                                scrollDirection: Axis.horizontal,
-                                physics: BouncingScrollPhysics(),
-                                children: [
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        height: 150,
-                                        width: 300,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                            shape: BoxShape.rectangle,
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    'assets/images/artikelImage/image1.png'),
-                                                fit: BoxFit.cover)),
-                                      ),
-                                      SizedBox(width: 0.0, height: 10),
-                                      Container(
-                                        width: 300,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              '7 Cara Mengelola Stres Dengan\nObat Herbal',
-                                              style: textBoldBlack.copyWith(
-                                                  fontSize: 14),
-                                            ),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Text('Sarah Oktaviani Alam'),
-                                                Icon(Icons.arrow_forward)
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        height: 150,
-                                        width: 300,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                            shape: BoxShape.rectangle,
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    'assets/images/artikelImage/image1.png'),
-                                                fit: BoxFit.cover)),
-                                      ),
-                                      SizedBox(width: 0.0, height: 10),
-                                      Container(
-                                        width: 300,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              '7 Cara Mengelola Stres Dengan\nObat Herbal',
-                                              style: textBoldBlack.copyWith(
-                                                  fontSize: 14),
-                                            ),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Text('Sarah Oktaviani Alam'),
-                                                Icon(Icons.arrow_forward)
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        height: 150,
-                                        width: 300,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                            shape: BoxShape.rectangle,
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    'assets/images/artikelImage/image1.png'),
-                                                fit: BoxFit.cover)),
-                                      ),
-                                      SizedBox(width: 0.0, height: 10),
-                                      Container(
-                                        width: 300,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              '7 Cara Mengelola Stres Dengan\nObat Herbal',
-                                              style: textBoldBlack.copyWith(
-                                                  fontSize: 14),
-                                            ),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Text('Sarah Oktaviani Alam'),
-                                                Icon(Icons.arrow_forward)
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                ],
-                              )),
-                        ), // Sini
+                        Container(
+                            width: double.infinity,
+                            height:
+                                250, // Sesuaikan dengan tinggi yang diinginkan
+                            child: ArtikelKesehatan()),
+                            
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              20, 20, 20, 12),
+                              20, 10, 20, 10),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -463,148 +359,11 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
 
-                        Padding(
-                          padding:
-                              const EdgeInsetsDirectional.fromSTEB(5, 5, 5, 0),
-                          child: Container(
-                              height:
-                                  230, // Sesuaikan dengan tinggi yang diinginkan
-                              child: ListView(
-                                scrollDirection: Axis.horizontal,
-                                physics: BouncingScrollPhysics(),
-                                children: [
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        height: 150,
-                                        width: 300,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                            shape: BoxShape.rectangle,
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    'assets/images/artikelImage/image2.png'),
-                                                fit: BoxFit.cover)),
-                                      ),
-                                      SizedBox(width: 0.0, height: 10),
-                                      Container(
-                                        width: 300,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              '7 Cara Mengelola Stres Dengan\nObat Herbal',
-                                              style: textBoldBlack.copyWith(
-                                                  fontSize: 14),
-                                            ),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Text('Sarah Oktaviani Alam'),
-                                                Icon(Icons.arrow_forward)
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        height: 150,
-                                        width: 300,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                            shape: BoxShape.rectangle,
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    'assets/images/artikelImage/image2.png'),
-                                                fit: BoxFit.cover)),
-                                      ),
-                                      SizedBox(width: 0.0, height: 10),
-                                      Container(
-                                        width: 300,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              '7 Cara Mengelola Stres Dengan\nObat Herbal',
-                                              style: textBoldBlack.copyWith(
-                                                  fontSize: 14),
-                                            ),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Text('Sarah Oktaviani Alam'),
-                                                Icon(Icons.arrow_forward)
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        height: 150,
-                                        width: 300,
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                            shape: BoxShape.rectangle,
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    'assets/images/artikelImage/image2.png'),
-                                                fit: BoxFit.cover)),
-                                      ),
-                                      SizedBox(width: 0.0, height: 10),
-                                      Container(
-                                        width: 300,
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              '7 Cara Mengelola Stres Dengan\nObat Herbal',
-                                              style: textBoldBlack.copyWith(
-                                                  fontSize: 14),
-                                            ),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Text('Sarah Oktaviani Alam'),
-                                                Icon(Icons.arrow_forward)
-                                              ],
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  SizedBox(width: 20, height: 0.0),
-                                ],
-                              )),
-                        ), // Sini
+                        Container(
+                            width: double.infinity,
+                            height:
+                                250, // Sesuaikan dengan tinggi yang diinginkan
+                            child: ArtikelObatherbal()), // Sini
                       ],
                     ),
                   ),

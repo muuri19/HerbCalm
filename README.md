@@ -50,8 +50,12 @@ flutter run
 Note : Make sure you're connected to your emulator or device when you want to run the app.
 ```
 
-- `Install APK on Your Device`
-[APK]()
+---
+
+- `Install APK on Your Device` : [Unduh file apk disini](https://drive.google.com/file/d/1l_kLc5YUwJ9XFEvoZtrORAIvHqTG_k7R/view?usp=sharing)
+> NOTE : Unduh file apk di device mobile tidak di PC maupun Laptop!.
+
+---
 
 ## 📱 UI Aplikasi
 

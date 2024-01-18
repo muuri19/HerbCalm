@@ -56,13 +56,13 @@ Note : Make sure you're connected to your emulator or device when you want to ru
 ## 📱 UI Aplikasi
 
 <p align="center">
-  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F1.jpg?alt=media&token=e67e0d1b-a1c0-4f07-b4b7-b271f8ab75d2" alt="Screenshot 1" width="200" />
-  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F2.jpg?alt=media&token=1f336932-00b4-4110-a1d8-7ffc46f6b02d" alt="Screenshot 2" width="200" />
-  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F3.jpg?alt=media&token=157784e0-3ebf-48b6-b538-3af58633ac6d" alt="Screenshot 3" width="200" />
-  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F4.jpg?alt=media&token=38d4465d-4863-444c-b709-d98a30aab71a" alt="Screenshot 4" width="200" />
-  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F5.jpg?alt=media&token=ec45f37e-ccc0-4f49-b09a-79dc83d0a090" alt="Screenshot 5" width="200" />
-  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F6.jpg?alt=media&token=9bdae3ce-7033-44eb-be71-531f86f60e8c" alt="Screenshot 6" width="200" />
-  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F7.jpg?alt=media&token=31ec1725-16da-45cc-a8bb-3faf5622bead" alt="Screenshot 7" width="200" />
+  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F1.jpg?alt=media&token=e67e0d1b-a1c0-4f07-b4b7-b271f8ab75d2" alt="Screenshot 1" width="100" />
+  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F2.jpg?alt=media&token=1f336932-00b4-4110-a1d8-7ffc46f6b02d" alt="Screenshot 2" width="100" />
+  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F3.jpg?alt=media&token=157784e0-3ebf-48b6-b538-3af58633ac6d" alt="Screenshot 3" width="100" />
+  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F4.jpg?alt=media&token=38d4465d-4863-444c-b709-d98a30aab71a" alt="Screenshot 4" width="100" />
+  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F5.jpg?alt=media&token=ec45f37e-ccc0-4f49-b09a-79dc83d0a090" alt="Screenshot 5" width="100" />
+  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F6.jpg?alt=media&token=9bdae3ce-7033-44eb-be71-531f86f60e8c" alt="Screenshot 6" width="100" />
+  <img src="https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/ScreenshootApp%2F7.jpg?alt=media&token=31ec1725-16da-45cc-a8bb-3faf5622bead" alt="Screenshot 7" width="100" />
 </p>
 
 `Screenshoot BackEnd`

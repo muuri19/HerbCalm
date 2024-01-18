@@ -39,7 +39,7 @@ class _AvatarBannerState extends State<AvatarBanner> {
                             ],
                             shape: BoxShape.circle,
                             image: DecorationImage(
-                                image: AssetImage('assets/images/profile.jpeg'),
+                                image: NetworkImage('https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/Patient_img%2FPas-A2.png?alt=media&token=28abc035-09b5-474a-822b-faabd1203af6'),
                                 fit: BoxFit.cover)),
                       ),
                       Positioned(

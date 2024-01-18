@@ -39,7 +39,7 @@ const SplashScreen({ Key? key }) : super(key: key);
         child: Container(
           height: 60,
           width: 250,
-          child: Image.asset('assets/images/logo/logo.png',fit: BoxFit.cover,),
+          child: Image.network('https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2Flogo.png?alt=media&token=432d431a-aad8-4e86-b3c7-a1b8e1b243ca',fit: BoxFit.cover,),
         ),
       ),
       backgroundColor: greenColor,

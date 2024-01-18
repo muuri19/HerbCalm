@@ -52,36 +52,13 @@ dev_dependencies:
 flutter: 
   uses-material-design: true
   assets:
-    - assets/images/screenshoot/1.jpg
-    - assets/images/screenshoot/2.jpg
-    - assets/images/screenshoot/3.jpg
-    - assets/images/logo/logo.png
-    - assets/images/logo/logo-white.png
+
     - assets/images/logo/logo-launcher-white.png
-    - assets/images/dokter/dr1.png
-    - assets/images/dokter/dr2.png
-    - assets/images/dokter/drf1.png
-    - assets/images/dokter/drf2.png
-    - assets/images/dokter/drf3.png
-    - assets/images/dokter/drf4.png
-    - assets/images/dokter/drf5.png
-    - assets/images/dokter/user.png
-    - assets/images/meditasi/meditasi.png
-    - assets/images/profile.jpeg
-    - assets/images/artikelImage/image1.png
-    - assets/images/artikelImage/image2.png
-    - assets/images/artikelImage/carousel.png
-    - assets/images/obatJamu/lancarhaid.png
-    - assets/images/banner/banner1.webp
-    - assets/images/banner/banner2.webp
-    - assets/images/banner/banner3.webp
-    - assets/images/konsultasi/intro-konsultasi.png
     - assets/svg/home/obatherbal.svg
     - assets/svg/home/konsultasi.svg
     - assets/svg/home/meditasi.svg
     - assets/svg/home/resepobat.svg
     - assets/svg/chat/addChat.svg
     - assets/svg/forum/addForum.svg
-
     - assets/json/forum-json.json
 

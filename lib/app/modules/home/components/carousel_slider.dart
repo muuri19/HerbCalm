@@ -11,9 +11,15 @@ class CarouselSliderView extends StatefulWidget {
 
 class _CarouselSliderViewState extends State<CarouselSliderView> {
   List<CarouselImageList> imagesBanner = [
-    CarouselImageList(imagePath: 'assets/images/banner/banner1.webp'),
-    CarouselImageList(imagePath: 'assets/images/banner/banner2.webp'),
-    CarouselImageList(imagePath: 'assets/images/banner/banner3.webp'),
+    CarouselImageList(
+        imagePath:
+            'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuObatHerbal%2FBanner%2Fbanner1.webp?alt=media&token=823a4a3a-fa28-4b83-834e-88a6c64a1b15'),
+    CarouselImageList(
+        imagePath:
+            'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuObatHerbal%2FBanner%2Fbanner2.webp?alt=media&token=a761dfd9-5566-4676-9bcd-55ccef78c78b'),
+    CarouselImageList(
+        imagePath:
+            'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuObatHerbal%2FBanner%2Fbanner3.webp?alt=media&token=d4599a19-e995-4ecc-a34d-7550ba98fc70'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -25,7 +31,7 @@ class _CarouselSliderViewState extends State<CarouselSliderView> {
               elevation: 5,
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                child: Image.asset(
+                child: Image.network(
                   image.imagePath,
                   fit: BoxFit.fill,
                 ),

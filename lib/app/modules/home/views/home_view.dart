@@ -159,7 +159,8 @@ class HomeView extends GetView<HomeController> {
                                 ),
                               ),
                               InkWell(
-                                onTap: () => Get.toNamed('/home/intro-konsultasi'),
+                                onTap: () =>
+                                    Get.toNamed('/home/intro-konsultasi'),
                                 child: Column(
                                   children: [
                                     Container(
@@ -238,83 +239,6 @@ class HomeView extends GetView<HomeController> {
                               ),
                             ],
                           ),
-
-                          // Container(
-                          //     height:
-                          //         100, // Sesuaikan dengan tinggi yang diinginkan
-                          //     child: ListView(
-                          //       scrollDirection: Axis.horizontal,
-                          //       physics: BouncingScrollPhysics(),
-                          //       children: [
-                          //         Column(
-                          //           children: [
-                          //             Container(
-                          //               height: 65,
-                          //               width: 65,
-                          //               decoration: BoxDecoration(
-                          //                   shape: BoxShape.circle,
-                          //                   color: greysColor),
-                          //               child: Center(
-                          //                 child: SvgPicture.asset(
-                          //                     'assets/svg/home/obatherbal.svg'),
-                          //               ),
-                          //             ),
-                          //             Text('Obat Herbal')
-                          //           ],
-                          //         ),
-                          //         SizedBox(width: 20, height: 0.0),
-                          //         Column(
-                          //           children: [
-                          //             Container(
-                          //               height: 65,
-                          //               width: 65,
-                          //               decoration: BoxDecoration(
-                          //                   shape: BoxShape.circle,
-                          //                   color: greysColor),
-                          //               child: Center(
-                          //                 child: SvgPicture.asset(
-                          //                     'assets/svg/home/konsultasi.svg'),
-                          //               ),
-                          //             ),
-                          //             Text('Konsultasi')
-                          //           ],
-                          //         ),
-                          //         SizedBox(width: 20, height: 0.0),
-                          //         Column(
-                          //           children: [
-                          //             Container(
-                          //               height: 65,
-                          //               width: 65,
-                          //               decoration: BoxDecoration(
-                          //                   shape: BoxShape.circle,
-                          //                   color: greysColor),
-                          //               child: Center(
-                          //                 child: SvgPicture.asset(
-                          //                     'assets/svg/home/resepobat.svg'),
-                          //               ),
-                          //             ),
-                          //             Text('Resep Obat')
-                          //           ],
-                          //         ),
-                          //         SizedBox(width: 20, height: 0.0),
-                          //         Column(
-                          //           children: [
-                          //             Container(
-                          //               height: 65,
-                          //               width: 65,
-                          //               decoration: BoxDecoration(
-                          //                   shape: BoxShape.circle,
-                          //                   color: greysColor),
-                          //               child: Center(
-                          //                 child: SvgPicture.asset(
-                          //                     'assets/svg/home/meditasi.svg'),
-                          //               ),
-                          //             ),
-                          //             Text('Meditasi'),
-                          //           ],
-                          //         ),
-                          //       ],
-                          //     )),
                         ),
 
                         Padding(
@@ -340,7 +264,7 @@ class HomeView extends GetView<HomeController> {
                             height:
                                 250, // Sesuaikan dengan tinggi yang diinginkan
                             child: ArtikelKesehatan()),
-                            
+
                         Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               20, 10, 20, 10),

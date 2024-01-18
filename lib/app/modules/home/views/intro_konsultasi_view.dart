@@ -24,8 +24,8 @@ class IntroKonsultasiView extends GetView {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image(
-                      image: AssetImage(
-                          'assets/images/konsultasi/intro-konsultasi.png')),
+                      image: NetworkImage(
+                          'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuKonsultasi%2Fintro-konsultasi.png?alt=media&token=d152c0c3-19fd-4951-adcf-706a469a1d07')),
                   Text(
                     'Selamat Datang di Konsultasi',
                     style: textBoldBlack.copyWith(fontSize: 16),

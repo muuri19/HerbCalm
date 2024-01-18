@@ -11,6 +11,15 @@ class MeditasiView extends GetView<MeditasiController> {
   Widget build(BuildContext context) {
     _meditasiController.showDialogAfterDelay();
     return Scaffold(
+        extendBodyBehindAppBar: false,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white, //* Animasi AppBar
+        title: const Text('Meditasi'),
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+      ),
         body: SafeArea(
             child: Column(
       children: [
@@ -83,8 +92,8 @@ class MeditasiView extends GetView<MeditasiController> {
                       height: 120,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage(
-                              'assets/images/meditasi/meditasi.png',
+                            image: NetworkImage(
+                              'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuMeditasi%2Fmeditasi.png?alt=media&token=83f53c03-bdf0-4d98-b09e-84c44bd4a842',
                             ),
                             fit: BoxFit.cover),
                         borderRadius: BorderRadius.only(

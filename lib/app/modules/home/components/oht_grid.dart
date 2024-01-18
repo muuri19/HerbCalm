@@ -38,7 +38,7 @@ class _OhtGridState extends State<OhtGrid> {
                   decoration: BoxDecoration(
                     image: DecorationImage(
                         image:
-                            AssetImage('assets/images/obatJamu/lancarhaid.png',), fit: BoxFit.cover),
+                            NetworkImage('https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuObatHerbal%2Flancarhaid.png?alt=media&token=bcf47d02-fb3f-4d37-b5e7-ca2a8bcaaaaf',), fit: BoxFit.cover),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(0),
                       bottomRight: Radius.circular(0),

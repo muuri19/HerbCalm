@@ -25,7 +25,7 @@ class _ListChatState extends State<ListChat> {
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
                   leading: CircleAvatar(
-                    child: Image.asset('assets/images/dokter/dr1.png'),
+                    child: Image.network('https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/Doctor_img%2Fdrf1.png?alt=media&token=da1d9bef-959d-4da8-a30d-b27a4e8ce0ef'),
                   ),
                   trailing: Container(
                     height: 25,

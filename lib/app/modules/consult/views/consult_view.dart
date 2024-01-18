@@ -46,7 +46,7 @@ class ConsultView extends GetView<ConsultController> {
                             height: 50,
                             width: 50,
                             decoration: BoxDecoration(shape: BoxShape.circle),
-                            child: Image.asset('assets/images/dokter/dr1.png'),
+                            child: Image.network('https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/Doctor_img%2Fdrf2.png?alt=media&token=26c94380-f9d9-49a2-b6f4-e1c303da4226'),
                           ),
                           Text('Isabelle')
                         ],
@@ -62,7 +62,7 @@ class ConsultView extends GetView<ConsultController> {
                             height: 50,
                             width: 50,
                             decoration: BoxDecoration(shape: BoxShape.circle),
-                            child: Image.asset('assets/images/dokter/dr2.png'),
+                            child: Image.network('https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/Doctor_img%2Fdrf1.png?alt=media&token=da1d9bef-959d-4da8-a30d-b27a4e8ce0ef'),
                           ),
                           Text('Alexander')
                         ],

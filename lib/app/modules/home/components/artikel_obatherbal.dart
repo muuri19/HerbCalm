@@ -15,7 +15,7 @@ class ArtikelObatherbal extends StatefulWidget {
 
 class _ArtikelObatherbalState extends State<ArtikelObatherbal> {
   final dataArtikelObatHerbal =
-      FirebaseDatabase.instance.ref('HerbcalmDB/herbalMedicine');
+      FirebaseDatabase.instance.ref('HerbcalmDB/artikelObatHerbal');
   @override
   Widget build(BuildContext context) {
     return FirebaseAnimatedList(
@@ -38,8 +38,8 @@ class _ArtikelObatherbalState extends State<ArtikelObatherbal> {
                         borderRadius: BorderRadius.circular(12),
                         shape: BoxShape.rectangle,
                         image: DecorationImage(
-                            image: AssetImage(
-                                'assets/images/artikelImage/image1.png'),
+                            image: NetworkImage(
+                                 snapshot.child('imgurl').value.toString()),
                             fit: BoxFit.cover)),
                   ),
                   SizedBox(width: 0.0, height: 10),

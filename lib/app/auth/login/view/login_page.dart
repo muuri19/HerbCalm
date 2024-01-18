@@ -34,8 +34,8 @@ class _LoginPageState extends State<LoginPage> {
               Container(
                 width: 150,
                 height: 50,
-                child: Image.asset(
-                  'assets/images/logo/logo-white.png',
+                child: Image.network(
+                  'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2Flogo-white.png?alt=media&token=167415c5-54e1-40c1-9e90-f314c54d0184',
                 ),
               ),
               SizedBox(

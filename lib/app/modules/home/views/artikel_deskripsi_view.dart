@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:herbcalm/theme.dart';
 
 class ArtikelDeskripsiView extends GetView {
   const ArtikelDeskripsiView({Key? key}) : super(key: key);
@@ -8,14 +9,13 @@ class ArtikelDeskripsiView extends GetView {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ArtikelDeskripsiView'),
+        title: const Text('Deskripsi Artikel'),
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          Hero(tag: 'bannerArtikelKesehatan', child: Text('Data Hero')),
-        ],
-      ),
+      body: Center(
+        child: Text('Mohon Maaf halaman ini masih dalam pengembangan Ide selanjutnya', textAlign: TextAlign.center,
+        style: textRegularGrey.copyWith(fontSize: 18),),
+      )
     );
   }
 }

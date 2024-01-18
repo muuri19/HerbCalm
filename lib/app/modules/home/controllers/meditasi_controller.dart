@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:herbcalm/theme.dart';
 
-class ObatHerbalController extends GetxController {
+class MeditasiController extends GetxController {
   RxBool dialogShown = false.obs;
 
   void showDialogAfterDelay() async {
@@ -26,7 +26,6 @@ class ObatHerbalController extends GetxController {
       );
     }
   }
-
   @override
   void onInit() {
     super.onInit();
@@ -42,4 +41,5 @@ class ObatHerbalController extends GetxController {
   void onClose() {
     super.onClose();
   }
+
 }

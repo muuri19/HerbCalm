@@ -77,7 +77,7 @@ class IntroKonsultasiView extends GetView {
                                         keyboardType: TextInputType.name,
                                         decoration: InputDecoration(
                                             border: OutlineInputBorder(),
-                                            hintText: 'Muuri Senpai'),
+                                            hintText: 'Masukkan nama nda'),
                                       ),
                                       Text('Umur'),
                                       TextFormField(
@@ -119,10 +119,9 @@ class IntroKonsultasiView extends GetView {
                                       ),
                                     ],
                                   ),
-
                                   SizedBox(
                                     height: 15,
-                                  ), 
+                                  ),
                                   Container(
                                     width: MediaQuery.of(context).size.width,
                                     child: Row(
@@ -143,13 +142,16 @@ class IntroKonsultasiView extends GetView {
                                                 backgroundColor:
                                                     MaterialStatePropertyAll(
                                                         greenColor)),
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              Get.toNamed(
+                                                  '/home/intro-konsultasi/konsultasi');
+                                            },
                                             child: Container(
                                               width: 100,
                                               height: 50,
                                               child: Center(
                                                   child: Text(
-                                                'Masuk',
+                                                'Submit',
                                                 style: textSemiBoldWhite
                                                     .copyWith(fontSize: 16),
                                               )),
@@ -169,7 +171,7 @@ class IntroKonsultasiView extends GetView {
                                                     MaterialStatePropertyAll(
                                                         greyColor)),
                                             onPressed: () {
-                                              () => Navigator.pop(context);
+                                              Get.back();
                                             },
                                             child: Container(
                                               width: 100,
@@ -189,151 +191,6 @@ class IntroKonsultasiView extends GetView {
                             ),
                           );
                         });
-                    // showModalBottomSheet(
-                    //   useSafeArea: true,
-                    //   showDragHandle: true,
-                    //   isScrollControlled: true,
-                    //   elevation: 4,
-                    //   backgroundColor: Colors.white,
-                    //   context: context,
-                    //   builder: (context) {
-                    //     return SingleChildScrollView(
-                    //       child: Padding(
-                    //         padding: const EdgeInsets.all(15.0),
-                    //         child: Wrap(
-                    //           spacing: 10,
-                    //           runSpacing: 10,
-                    //           alignment: WrapAlignment.center,
-                    //           children: [
-                    //             Text(
-                    //               'Form Keluhan',
-                    //               style: textBoldBlack.copyWith(fontSize: 18),
-                    //             ),
-                    //             Container(
-                    //               height: 60,
-                    //               child: Text(
-                    //                 'Sebelum memulai chat dengan dokter, ayo beritahu kami tentang keluhan anda biar kami carikan dokter yang sesuai untuk anda.',
-                    //                 style: textRegularGrey.copyWith(
-                    //                     fontSize: 14),
-                    //                 textAlign: TextAlign.center,
-                    //               ),
-                    //             ),
-                    //             Wrap(
-                    //               spacing: 10,
-                    //               runSpacing: 10,
-                    //               children: [
-                    //                 Text('Nama'),
-                    //                 TextFormField(
-                    //                   keyboardType: TextInputType.name,
-                    //                   decoration: InputDecoration(
-                    //                       border: OutlineInputBorder(),
-                    //                       hintText: 'Muuri Senpai'),
-                    //                 ),
-                    //                 Text('Umur'),
-                    //                 TextFormField(
-                    //                   keyboardType: TextInputType.number,
-                    //                   decoration: InputDecoration(
-                    //                     suffixText: 'Tahun',
-                    //                     border: OutlineInputBorder(),
-                    //                     hintText: 'Masukkan umur anda',
-                    //                   ),
-                    //                 ),
-                    //                 Text('Jenis Kelamin'),
-                    //                 DropdownButtonFormField(
-                    //                   isExpanded: true,
-                    //                   decoration: InputDecoration(
-                    //                     border: OutlineInputBorder(),
-                    //                   ),
-                    //                   items: <String>['Pria', 'Wanita']
-                    //                       .map((String value) {
-                    //                     return DropdownMenuItem<String>(
-                    //                       value: value,
-                    //                       child: Text(value),
-                    //                     );
-                    //                   }).toList(),
-                    //                   onChanged: (_) {},
-                    //                 ),
-                    //                 Text('Keluhan'),
-                    //                 Padding(
-                    //                   padding:  EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
-                    //                   child: TextFormField(
-                    //                     minLines: 10,
-                    //                     maxLines: 10,
-                    //                     keyboardType: TextInputType.multiline,
-                    //                     decoration: InputDecoration(
-                    //                         border: OutlineInputBorder()),
-                    //                   ),
-                    //                 ),
-                    //                 Container(
-                    //               width: MediaQuery.of(context).size.width,
-                    //               child: Row(
-                    //                 mainAxisAlignment:
-                    //                     MainAxisAlignment.spaceEvenly,
-                    //                 children: [
-                    //                   ElevatedButton(
-                    //                       style: ButtonStyle(
-                    //                           shape:
-                    //                               MaterialStateProperty.all<
-                    //                                   RoundedRectangleBorder>(
-                    //                             RoundedRectangleBorder(
-                    //                               borderRadius:
-                    //                                   BorderRadius.circular(
-                    //                                       10.0), // Ganti nilai sesuai kebutuhan
-                    //                             ),
-                    //                           ),
-                    //                           backgroundColor:
-                    //                               MaterialStatePropertyAll(
-                    //                                   greenColor)),
-                    //                       onPressed: () {},
-                    //                       child: Container(
-                    //                         width: 100,
-                    //                         height: 50,
-                    //                         child: Center(
-                    //                             child: Text(
-                    //                           'Masuk',
-                    //                           style: textSemiBoldWhite
-                    //                               .copyWith(fontSize: 16),
-                    //                         )),
-                    //                       )),
-                    //                   ElevatedButton(
-                    //                       style: ButtonStyle(
-                    //                           shape:
-                    //                               MaterialStateProperty.all<
-                    //                                   RoundedRectangleBorder>(
-                    //                             RoundedRectangleBorder(
-                    //                               borderRadius:
-                    //                                   BorderRadius.circular(
-                    //                                       10.0), // Ganti nilai sesuai kebutuhan
-                    //                             ),
-                    //                           ),
-                    //                           backgroundColor:
-                    //                               MaterialStatePropertyAll(
-                    //                                   greyColor)),
-                    //                       onPressed: () {
-                    //                         () => Navigator.pop(context);
-                    //                       },
-                    //                       child: Container(
-                    //                         width: 100,
-                    //                         height: 50,
-                    //                         child: Center(
-                    //                             child: Text(
-                    //                           'Batal',
-                    //                           style: textSemiBoldWhite
-                    //                               .copyWith(fontSize: 16),
-                    //                         )),
-                    //                       )),
-                    //                 ],
-                    //               ),
-                    //             )
-                    //               ],
-                    //             ),
-
-                    //           ],
-                    //         ),
-                    //       ),
-                    //     );
-                    //   },
-                    // );
                   },
                   child: Container(
                     width: MediaQuery.of(context).size.width,

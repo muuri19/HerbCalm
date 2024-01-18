@@ -27,40 +27,58 @@ class ProfileView extends GetView<ProfileController> {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            AvatarBanner(),
+            InkWell(
+                onTap: () {
+                  Get.snackbar('From : Team Development',
+                      'Mohon maaf untuk fitur ini masih dalam pengembangan');
+                },
+                child: AvatarBanner()),
             StickyHeader(
-              overlapHeaders: false,
-              header: Container(
-                width: double.infinity,
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Color(0xFFEDF2F7),
-                  border: Border(
-                    bottom: BorderSide(
-                      color: greenColor,
-                      width: 2
-                    )
-                  )
-                  
-                ),
-                alignment: AlignmentDirectional(-1.00, 0.00),
-                child: Align(
-                  alignment: AlignmentDirectional(0.00, 0.00),
-                  child: Text(
-                    'Info',
-                    style: TextStyle(fontSize: 18, color: greenColor, fontWeight: FontWeight.w600),
+                overlapHeaders: false,
+                header: Container(
+                  width: double.infinity,
+                  height: 50,
+                  decoration: BoxDecoration(
+                      color: Color(0xFFEDF2F7),
+                      border: Border(
+                          bottom: BorderSide(color: greenColor, width: 2))),
+                  alignment: AlignmentDirectional(-1.00, 0.00),
+                  child: Align(
+                    alignment: AlignmentDirectional(0.00, 0.00),
+                    child: Text(
+                      'Info',
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: greenColor,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ),
                 ),
-              ),
-              content: Column(
-                children: [
-                  DataDiri(),
-                  MenuLain(),
-                  HelpContact(),
-                  ButtonLogout()
-                ],
-              )
-            ),
+                content: Column(
+                  children: [
+                    InkWell(
+                        onTap: () {
+                          Get.snackbar('From : Team Development',
+                              'Mohon maaf untuk fitur ini masih dalam pengembangan');
+                        },
+                        child: DataDiri()),
+                    InkWell(
+                      onTap: () {
+                        Get.snackbar('From : Team Development',
+                            'Mohon maaf untuk fitur ini masih dalam pengembangan');
+                      },
+                      child: MenuLain(),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Get.snackbar('From : Team Development',
+                            'Mohon maaf untuk fitur ini masih dalam pengembangan');
+                      },
+                      child: HelpContact(),
+                    ),
+                    ButtonLogout()
+                  ],
+                )),
           ],
         ),
       ),

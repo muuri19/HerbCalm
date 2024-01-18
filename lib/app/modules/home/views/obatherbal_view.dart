@@ -1,5 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -10,11 +8,12 @@ import 'package:herbcalm/app/modules/home/components/oht_grid.dart';
 import 'package:herbcalm/app/modules/home/controllers/obat_herbal_controller.dart';
 import 'package:herbcalm/theme.dart';
 
-class ObatherbalView extends GetView {
+class ObatherbalView extends GetView <ObatHerbalController>{
   ObatherbalView({Key? key}) : super(key: key);
-
+  ObatHerbalController _obatHerbalController = Get.put(ObatHerbalController());
   @override
   Widget build(BuildContext context) {
+    _obatHerbalController.showDialogAfterDelay();
     return DefaultTabController(
       length: 3,
       child: Scaffold(

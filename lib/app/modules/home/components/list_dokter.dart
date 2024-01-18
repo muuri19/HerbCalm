@@ -1,6 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:herbcalm/theme.dart';
 
 class ListDokter extends StatefulWidget {
@@ -25,7 +26,7 @@ class _ListDokterState extends State<ListDokter> {
               child: InkWell(
                 splashColor: greenColor.withAlpha(30),
                 onTap: () {
-                  print('Card diklik!');
+                  Get.snackbar('From : Team Development', 'Mohon maaf untuk fitur ini masih dalam pengembangan');
                 },
                 child: Row(
                   children: [

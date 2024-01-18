@@ -22,6 +22,37 @@ Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber inform
 
 - **Profil Pribadi yang Dapat Diatur:** 👤 Kelola data pribadi Anda dengan fitur profil yang dapat diedit.
 
+
+
+## Running Apps on Local and Installation
+- `Running Apps on Lokal`
+1. Copy url repository
+```bash
+ https://github.com/muhammadsadri19/HerbCalm.git
+```
+2. Clone in your project folder with git or terminal and open project
+```bash
+ git clone https://github.com/muhammadsadri19/HerbCalm.git
+ code .
+```
+3. Move the branch project from master to dev
+```bash
+git branch dev
+git checkout dev
+```
+4. Open terminal or git where the project is cloned and install all package
+```bash
+flutter pub get
+```
+5. Run Projet
+```bash
+flutter run
+Note : Make sure you're connected to your emulator or device when you want to run the app.
+```
+
+- `Install APK on Your Device`
+[APK]()
+
 ## 📱 UI Aplikasi
 
 <p align="center">

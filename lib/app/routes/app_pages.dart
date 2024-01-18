@@ -56,8 +56,9 @@ class AppPages {
               page: () => IntroKonsultasiView(),
               children: [
                 GetPage(
-                    name: _Paths.INTROKONSULTASI,
-                    page: () => KonsultasiView())
+                  name: _Paths.KONSULTASI,
+                  page: () => KonsultasiView(),
+                )
               ]),
           GetPage(
             name: _Paths.RESEPOBAT,

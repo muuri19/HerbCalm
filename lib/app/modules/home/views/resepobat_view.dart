@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:herbcalm/app/modules/home/controllers/resep_obat_controller.dart';
 import 'package:herbcalm/theme.dart';
 
-class ResepobatView extends GetView {
-  const ResepobatView({Key? key}) : super(key: key);
+class ResepobatView extends GetView <ResepObatController>{
+
+   ResepobatView({Key? key}) : super(key: key);
+  ResepObatController _resepObatController = Get.put(ResepObatController());
   @override
   Widget build(BuildContext context) {
+    _resepObatController.showDialogAfterDelay();
     return Scaffold(
         body: SafeArea(
             child: Column(

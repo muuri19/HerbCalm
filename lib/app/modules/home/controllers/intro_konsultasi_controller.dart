@@ -1,6 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class HomeController extends GetxController {
+class IntroKonsultasiController extends GetxController {
+
+final formKey = GlobalKey<FormState>();
+
   @override
   void onInit() {
     super.onInit();
@@ -15,4 +19,5 @@ class HomeController extends GetxController {
   void onClose() {
     super.onClose();
   }
+
 }

@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:herbcalm/app/modules/home/controllers/meditasi_controller.dart';
 import 'package:herbcalm/theme.dart';
 
-class MeditasiView extends GetView {
-  const MeditasiView({Key? key}) : super(key: key);
+class MeditasiView extends GetView<MeditasiController> {
+  MeditasiView({Key? key}) : super(key: key);
+  MeditasiController _meditasiController = Get.put(MeditasiController());
   @override
   Widget build(BuildContext context) {
+    _meditasiController.showDialogAfterDelay();
     return Scaffold(
         body: SafeArea(
             child: Column(
@@ -54,7 +57,7 @@ class MeditasiView extends GetView {
         ),
         Expanded(
             child: GridView.count(
-              physics: ClampingScrollPhysics(),
+          physics: ClampingScrollPhysics(),
           crossAxisCount: 2,
           children: List.generate(10, (index) {
             return Padding(

@@ -25,7 +25,9 @@ class ForumView extends GetView<ForumController> {
           child: CardWidgetForum()),
       floatingActionButton: FloatingActionButton(
         heroTag: 'addForum',
-        onPressed: () {},
+        onPressed: () {
+          Get.snackbar('From : Team Development', 'Mohon maaf untuk fitur ini masih dalam pengembangan');
+        },
         backgroundColor: greenColor,
         child: Center(
           child: SvgPicture.asset('assets/svg/forum/addForum.svg'),

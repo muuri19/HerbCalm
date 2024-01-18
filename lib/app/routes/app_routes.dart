@@ -43,7 +43,6 @@ abstract class _Paths {
   static const OBATHERBAL = '/obat-herbal';
   static const RESEPOBAT= '/resep-obat';
   static const INTROKONSULTASI = '/intro-konsultasi';
-  static const FORMKELUHAN = '/form-keluhan';
   static const KONSULTASI= '/konsultasi';
   static const MEDITASI= '/meditasi';
 

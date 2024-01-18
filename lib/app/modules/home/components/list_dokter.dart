@@ -38,8 +38,8 @@ class _ListDokterState extends State<ListDokter> {
                         decoration: BoxDecoration(
                             borderRadius:
                                 BorderRadius.all(Radius.circular(12))),
-                        child: Image.asset(
-                          'assets/images/dokter/user.png',
+                        child: Image.network(
+                          snapshot.child('imgurl').value.toString(),
                           fit: BoxFit.cover,
                         ),
                       ),

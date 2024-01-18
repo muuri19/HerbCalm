@@ -11,6 +11,15 @@ class MeditasiView extends GetView<MeditasiController> {
   Widget build(BuildContext context) {
     _meditasiController.showDialogAfterDelay();
     return Scaffold(
+        extendBodyBehindAppBar: false,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white, //* Animasi AppBar
+        title: const Text('Meditasi'),
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+      ),
         body: SafeArea(
             child: Column(
       children: [

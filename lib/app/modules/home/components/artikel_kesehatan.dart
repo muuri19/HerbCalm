@@ -15,7 +15,7 @@ class ArtikelKesehatan extends StatefulWidget {
 
 class _ArtikelKesehatanState extends State<ArtikelKesehatan> {
   final dataArtikelKesehatan =
-      FirebaseDatabase.instance.ref('HerbcalmDB/articleHealty');
+      FirebaseDatabase.instance.ref('HerbcalmDB/artikelKesehatan');
 
   @override
   Widget build(BuildContext context) {

@@ -254,8 +254,8 @@ class _ChatViewFiturState extends State<ChatViewFitur> {
                       width: 35,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(12))),
-                      child: Image.asset(
-                        'assets/images/dokter/drf1.png',
+                      child: Image.network(
+                        'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/Doctor_img%2Fdrf1.png?alt=media&token=da1d9bef-959d-4da8-a30d-b27a4e8ce0ef',
                         fit: BoxFit.cover,
                       ),
                     ),

@@ -13,7 +13,7 @@ class _CarouselSliderViewState extends State<CarouselSliderView> {
   List<CarouselImageList> imagesBanner = [
     CarouselImageList(
         imagePath:
-            'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuObatHerbal%2Flancarhaid.png?alt=media&token=bcf47d02-fb3f-4d37-b5e7-ca2a8bcaaaaf'),
+            'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuObatHerbal%2FBanner%2Fbanner1.webp?alt=media&token=823a4a3a-fa28-4b83-834e-88a6c64a1b15'),
     CarouselImageList(
         imagePath:
             'https://firebasestorage.googleapis.com/v0/b/herbcalm-9227b.appspot.com/o/assets%2FHomePage%2FMenuObatHerbal%2FBanner%2Fbanner2.webp?alt=media&token=a761dfd9-5566-4676-9bcd-55ccef78c78b'),

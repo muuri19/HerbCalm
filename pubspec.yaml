@@ -60,5 +60,4 @@ flutter:
     - assets/svg/home/resepobat.svg
     - assets/svg/chat/addChat.svg
     - assets/svg/forum/addForum.svg
-    - assets/json/forum-json.json
 

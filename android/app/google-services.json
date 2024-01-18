@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "905674764363",
+    "firebase_url": "https://herbcalm-9227b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "herbcalm-9227b",
+    "storage_bucket": "herbcalm-9227b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905674764363:android:8b10b739ac3a1b45815dce",
+        "android_client_info": {
+          "package_name": "com.example.herbcalm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905674764363-9ccvgl9f7ac6t021sokaqkurer088dtt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAm-n4PKlqTZJ2gH0qaJ42sWZ6VE7H6e0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905674764363-9ccvgl9f7ac6t021sokaqkurer088dtt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

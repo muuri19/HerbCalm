@@ -1,0 +1,103 @@
+﻿{
+    "forum" : [
+        {
+            "nama_pasien": "John Doe",
+            "tanggal_kirim": "2024-01-16",
+            "jam_kirim": "14:30",
+            "role": "pasien",
+            "text_pertanyaan": "Apakah ada obat herbal yang efektif untuk mengatasi flu?",
+            "jumlah_like": "10",
+            "jumlah_komen": "5"
+        },
+        {
+            "nama_pasien": "Jane Smith",
+            "tanggal_kirim": "2024-01-18",
+            "jam_kirim": "16:45",
+            "role": "pasien",
+            "text_pertanyaan": "Apa rekomendasi obat herbal untuk tekanan darah tinggi?",
+            "jumlah_like": "8",
+            "jumlah_komen": "3"
+        },
+        {
+            "nama_pasien": "Mary Johnson",
+            "tanggal_kirim": "2024-01-20",
+            "jam_kirim": "12:15",
+            "role": "pasien",
+            "text_pertanyaan": "Bagaimana cara mengatasi insomnia dengan obat herbal?",
+            "jumlah_like": "15",
+            "jumlah_komen": "7"
+        },
+        {
+            "nama_pasien": "Dr. A",
+            "tanggal_kirim": "2024-01-22",
+            "jam_kirim": "09:00",
+            "role": "dokter",
+            "text_pertanyaan": "Seberapa aman konsumsi ekstrak ginkgo biloba dalam jangka panjang?",
+            "jumlah_like": "12",
+            "jumlah_komen": "4"
+        },
+        {
+            "nama_pasien": "Bob Wilson",
+            "tanggal_kirim": "2024-01-25",
+            "jam_kirim": "17:30",
+            "role": "pasien",
+            "text_pertanyaan": "Obat herbal apa yang bisa membantu mengurangi stres?",
+            "jumlah_like": "18",
+            "jumlah_komen": "6"
+        },
+        {
+            "nama_pasien": "Alice Brown",
+            "tanggal_kirim": "2024-01-28",
+            "jam_kirim": "10:20",
+            "role": "pasien",
+            "text_pertanyaan": "Adakah obat herbal yang efektif untuk mengatasi alergi?",
+            "jumlah_like": "14",
+            "jumlah_komen": "8"
+        },
+        {
+            "nama_pasien": "Dr. C",
+            "tanggal_kirim": "2024-01-30",
+            "jam_kirim": "14:00",
+            "role": "dokter",
+            "text_pertanyaan": "Bagaimana cara mengatasi migrain dengan pendekatan herbal?",
+            "jumlah_like": "11",
+            "jumlah_komen": "5"
+        },
+        {
+            "nama_pasien": "Sara White",
+            "tanggal_kirim": "2024-02-02",
+            "jam_kirim": "08:45",
+            "role": "pasien",
+            "text_pertanyaan": "Obat herbal apa yang bisa membantu meningkatkan sistem kekebalan tubuh?",
+            "jumlah_like": "20",
+            "jumlah_komen": "12"
+        },
+        {
+            "nama_pasien": "Dr. D",
+            "tanggal_kirim": "2024-02-05",
+            "jam_kirim": "11:10",
+            "role": "dokter",
+            "text_pertanyaan": "Apakah ada obat herbal yang efektif untuk mengontrol kadar gula darah?",
+            "jumlah_like": "16",
+            "jumlah_komen": "9"
+        },
+        {
+            "nama_pasien": "Mark Taylor",
+            "tanggal_kirim": "2024-02-08",
+            "jam_kirim": "15:20",
+            "role": "pasien",
+            "text_pertanyaan": "Apa saja tanaman herbal yang dapat membantu meredakan nyeri sendi?",
+            "jumlah_like": "13",
+            "jumlah_komen": "6"
+        },
+        {
+            "nama_pasien": "Dr. E",
+            "tanggal_kirim": "2024-02-10",
+            "jam_kirim": "09:30",
+            "role": "dokter",
+            "text_pertanyaan": "Bagaimana cara mengatasi gangguan pencernaan dengan obat herbal?",
+            "jumlah_like": "17",
+            "jumlah_komen": "8"
+        }
+    ]
+}

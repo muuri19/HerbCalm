@@ -35,7 +35,7 @@ Aplikasi Kesehatan Herbal adalah teman sehat Anda yang menyediakan sumber inform
  git clone https://github.com/muhammadsadri19/HerbCalm.git
  code .
 ```
-3. Move the branch project from master to dev
+3. You can try the 2 branches, dev and master, the thing to know if dev may still be in development.
 ```bash
 git branch dev
 git checkout dev
